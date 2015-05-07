@@ -1,20 +1,30 @@
 //
-//  Singleton.m
+//  CoreDataStack.m
 //  PlayingWithSingletonCoreData
 //
 //  Created by Michael Vilabrera on 5/7/15.
 //  Copyright (c) 2015 Giving Tree. All rights reserved.
 //
 
-#import "Singleton.h"
+#import "CoreDataStack.h"
 
-@implementation Singleton
+@implementation CoreDataStack
+
 
 #pragma mark - Core Data stack
 
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
+
++ (instancetype) defaultStack {
+    static CoreDataStack *defaultStack;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        defaultStack = [[self alloc] init];
+    });
+    return defaultStack;
+}
 
 - (NSURL *)applicationDocumentsDirectory {
     // The directory the application uses to store the Core Data store file. This code uses a directory named "com.GivingTree.PlayingWithSingletonCoreData" in the application's documents directory.
@@ -89,6 +99,5 @@
         }
     }
 }
-
 
 @end

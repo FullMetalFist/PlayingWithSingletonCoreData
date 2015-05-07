@@ -7,11 +7,13 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "UnitSearchTableViewController.h"
+#import "UnitDetailViewController.h"
 
 @interface AppDelegate ()
 
-@property (nonatomic) ViewController *viewController;
+@property (nonatomic) UnitDetailViewController *unitDetailVC;
+@property (nonatomic) UnitSearchTableViewController *unitSearchTVC;
 @property (nonatomic) UINavigationController *naviController;
 
 @end
@@ -23,8 +25,8 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.viewController = [[ViewController alloc] initWithNibName:nil bundle:nil];
-    self.naviController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+    self.unitSearchTVC = [[UnitSearchTableViewController alloc] initWithNibName:nil bundle:nil];
+    self.naviController = [[UINavigationController alloc] initWithRootViewController:self.unitSearchTVC];
     self.window.rootViewController = self.naviController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
@@ -53,7 +55,6 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
-//    [self saveContext];
 }
 
 

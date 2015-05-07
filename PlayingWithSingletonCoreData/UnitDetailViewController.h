@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UnitDetailViewController.h
 //  PlayingWithSingletonCoreData
 //
 //  Created by Michael Vilabrera on 5/7/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface UnitDetailViewController : UIViewController
 
 @end
-

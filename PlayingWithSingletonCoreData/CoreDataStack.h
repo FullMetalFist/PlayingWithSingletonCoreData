@@ -1,5 +1,5 @@
 //
-//  Singleton.h
+//  CoreDataStack.h
 //  PlayingWithSingletonCoreData
 //
 //  Created by Michael Vilabrera on 5/7/15.
@@ -9,11 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@interface Singleton : NSObject
+@interface CoreDataStack : NSObject
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
++ (instancetype) defaultStack;
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
