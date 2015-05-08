@@ -6,8 +6,9 @@
         <attribute name="cooldown" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="range" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Units" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="Units" positionX="-63" positionY="-18" width="128" height="135"/>
     </elements>
 </model>

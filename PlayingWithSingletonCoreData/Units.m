@@ -2,7 +2,7 @@
 //  Units.m
 //  PlayingWithSingletonCoreData
 //
-//  Created by Michael Vilabrera on 5/7/15.
+//  Created by Michael Vilabrera on 5/8/15.
 //  Copyright (c) 2015 Giving Tree. All rights reserved.
 //
 
@@ -11,10 +11,11 @@
 
 @implementation Units
 
-@dynamic name;
-@dynamic attackType;
 @dynamic airAttack;
+@dynamic attackType;
 @dynamic cooldown;
+@dynamic name;
 @dynamic range;
+@dynamic type;
 
 @end

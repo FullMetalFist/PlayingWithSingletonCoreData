@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C11C9991AFD0977001211F3 /* Units.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C11C9981AFD0977001211F3 /* Units.m */; };
 		7C6BD5831AFBB6F2000B652C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BD5821AFBB6F2000B652C /* main.m */; };
 		7C6BD5861AFBB6F2000B652C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BD5851AFBB6F2000B652C /* AppDelegate.m */; };
 		7C6BD5891AFBB6F2000B652C /* PlayingWithSingletonCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BD5871AFBB6F2000B652C /* PlayingWithSingletonCoreData.xcdatamodeld */; };
 		7C6BD5911AFBB6F2000B652C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C6BD5901AFBB6F2000B652C /* Images.xcassets */; };
 		7C6BD5941AFBB6F2000B652C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C6BD5921AFBB6F2000B652C /* LaunchScreen.xib */; };
 		7C6BD5A01AFBB6F2000B652C /* PlayingWithSingletonCoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BD59F1AFBB6F2000B652C /* PlayingWithSingletonCoreDataTests.m */; };
-		7C6BD5AE1AFBC3C3000B652C /* Units.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BD5AD1AFBC3C3000B652C /* Units.m */; };
 		7C6BD5B11AFBC82A000B652C /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BD5B01AFBC82A000B652C /* CoreDataStack.m */; };
 		7C6BD5B41AFBC8A6000B652C /* UnitSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BD5B31AFBC8A6000B652C /* UnitSearchTableViewController.m */; };
 		7C6BD5B71AFBC8BD000B652C /* UnitDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BD5B61AFBC8BD000B652C /* UnitDetailViewController.m */; };
+		7C6BD5BA1AFBCA7F000B652C /* UnitSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BD5B91AFBCA7F000B652C /* UnitSearchTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C11C9971AFD0977001211F3 /* Units.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Units.h; sourceTree = "<group>"; };
+		7C11C9981AFD0977001211F3 /* Units.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Units.m; sourceTree = "<group>"; };
 		7C6BD57D1AFBB6F2000B652C /* PlayingWithSingletonCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayingWithSingletonCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6BD5811AFBB6F2000B652C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C6BD5821AFBB6F2000B652C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -41,14 +44,14 @@
 		7C6BD5991AFBB6F2000B652C /* PlayingWithSingletonCoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayingWithSingletonCoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6BD59E1AFBB6F2000B652C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C6BD59F1AFBB6F2000B652C /* PlayingWithSingletonCoreDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayingWithSingletonCoreDataTests.m; sourceTree = "<group>"; };
-		7C6BD5AC1AFBC3C3000B652C /* Units.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Units.h; sourceTree = "<group>"; };
-		7C6BD5AD1AFBC3C3000B652C /* Units.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Units.m; sourceTree = "<group>"; };
 		7C6BD5AF1AFBC82A000B652C /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
 		7C6BD5B01AFBC82A000B652C /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
 		7C6BD5B21AFBC8A6000B652C /* UnitSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitSearchTableViewController.h; sourceTree = "<group>"; };
 		7C6BD5B31AFBC8A6000B652C /* UnitSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitSearchTableViewController.m; sourceTree = "<group>"; };
 		7C6BD5B51AFBC8BD000B652C /* UnitDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitDetailViewController.h; sourceTree = "<group>"; };
 		7C6BD5B61AFBC8BD000B652C /* UnitDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitDetailViewController.m; sourceTree = "<group>"; };
+		7C6BD5B81AFBCA7F000B652C /* UnitSearchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitSearchTableViewCell.h; sourceTree = "<group>"; };
+		7C6BD5B91AFBCA7F000B652C /* UnitSearchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitSearchTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,14 +93,16 @@
 		7C6BD57F1AFBB6F2000B652C /* PlayingWithSingletonCoreData */ = {
 			isa = PBXGroup;
 			children = (
-				7C6BD5AC1AFBC3C3000B652C /* Units.h */,
-				7C6BD5AD1AFBC3C3000B652C /* Units.m */,
+				7C11C9971AFD0977001211F3 /* Units.h */,
+				7C11C9981AFD0977001211F3 /* Units.m */,
 				7C6BD5841AFBB6F2000B652C /* AppDelegate.h */,
 				7C6BD5851AFBB6F2000B652C /* AppDelegate.m */,
 				7C6BD5AF1AFBC82A000B652C /* CoreDataStack.h */,
 				7C6BD5B01AFBC82A000B652C /* CoreDataStack.m */,
 				7C6BD5B21AFBC8A6000B652C /* UnitSearchTableViewController.h */,
 				7C6BD5B31AFBC8A6000B652C /* UnitSearchTableViewController.m */,
+				7C6BD5B81AFBCA7F000B652C /* UnitSearchTableViewCell.h */,
+				7C6BD5B91AFBCA7F000B652C /* UnitSearchTableViewCell.m */,
 				7C6BD5B51AFBC8BD000B652C /* UnitDetailViewController.h */,
 				7C6BD5B61AFBC8BD000B652C /* UnitDetailViewController.m */,
 				7C6BD5901AFBB6F2000B652C /* Images.xcassets */,
@@ -237,7 +242,8 @@
 				7C6BD5831AFBB6F2000B652C /* main.m in Sources */,
 				7C6BD5B41AFBC8A6000B652C /* UnitSearchTableViewController.m in Sources */,
 				7C6BD5B11AFBC82A000B652C /* CoreDataStack.m in Sources */,
-				7C6BD5AE1AFBC3C3000B652C /* Units.m in Sources */,
+				7C6BD5BA1AFBCA7F000B652C /* UnitSearchTableViewCell.m in Sources */,
+				7C11C9991AFD0977001211F3 /* Units.m in Sources */,
 				7C6BD5891AFBB6F2000B652C /* PlayingWithSingletonCoreData.xcdatamodeld in Sources */,
 				7C6BD5B71AFBC8BD000B652C /* UnitDetailViewController.m in Sources */,
 			);
@@ -426,6 +432,7 @@
 				7C6BD5A51AFBB6F2000B652C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C6BD5A61AFBB6F2000B652C /* Build configuration list for PBXNativeTarget "PlayingWithSingletonCoreDataTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +441,7 @@
 				7C6BD5A81AFBB6F2000B652C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
