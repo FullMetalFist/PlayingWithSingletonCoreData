@@ -7,14 +7,12 @@
 //
 
 #import "AppDelegate.h"
-#import "UnitSearchTableViewController.h"
-#import "UnitDetailViewController.h"
+#import "UnitsTableViewController.h"
 
 @interface AppDelegate ()
 
-@property (nonatomic) UnitDetailViewController *unitDetailVC;
-@property (nonatomic) UnitSearchTableViewController *unitSearchTVC;
 @property (nonatomic) UINavigationController *naviController;
+@property (nonatomic) UnitsTableViewController *unitsTVC;
 
 @end
 
@@ -25,8 +23,8 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.unitSearchTVC = [[UnitSearchTableViewController alloc] initWithNibName:nil bundle:nil];
-    self.naviController = [[UINavigationController alloc] initWithRootViewController:self.unitSearchTVC];
+    self.unitsTVC = [[UnitsTableViewController alloc] initWithNibName:nil bundle:nil];
+    self.naviController = [[UINavigationController alloc] initWithRootViewController:self.unitsTVC];
     self.window.rootViewController = self.naviController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

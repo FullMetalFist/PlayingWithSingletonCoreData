@@ -2,7 +2,7 @@
 //  Units.m
 //  PlayingWithSingletonCoreData
 //
-//  Created by Michael Vilabrera on 5/8/15.
+//  Created by Michael Vilabrera on 5/11/15.
 //  Copyright (c) 2015 Giving Tree. All rights reserved.
 //
 
@@ -17,5 +17,6 @@
 @dynamic name;
 @dynamic range;
 @dynamic type;
+@dynamic primaryAttribute;
 
 @end
